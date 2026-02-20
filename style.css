@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+}
+
+.slides {
+  position: relative;
+  height: 300px; /* 画像の高さと同じ */
+}
+
+.slides img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: black;
+}
+
